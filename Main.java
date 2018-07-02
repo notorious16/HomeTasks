@@ -3,8 +3,7 @@ package net.ukr.kurach.d;
 import java.util.Scanner;
 /**
  * 
- * Íàïèñàòü ïğîãğàììó êîòîğàÿ ñ÷èòûâàåò 5-è çíà÷íîå ÷èñëî ñ êëàâèàòóğû è 
- * âûâîäèò öèôğû èç êîòîğîãî îíî ñîñòîèò.
+ * ĞŸÑ€Ğ¸Ğ²ĞµÑ‚
  *
  */
 public class Main {
@@ -13,12 +12,12 @@ public class Main {
 		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Input a five-figure integer");
-		int inñNumber = sc.nextInt();
-		System.out.println(inñNumber / 10000);
-		System.out.println(inñNumber % 10000 / 1000);
-		System.out.println(inñNumber % 1000 / 100);
-		System.out.println(inñNumber % 100 / 10);
-		System.out.println(inñNumber % 10);
+		int inÃ±Number = sc.nextInt();
+		System.out.println(inÃ±Number / 10000);
+		System.out.println(inÃ±Number % 10000 / 1000);
+		System.out.println(inÃ±Number % 1000 / 100);
+		System.out.println(inÃ±Number % 100 / 10);
+		System.out.println(inÃ±Number % 10);
 		sc.close();
 	}
 
