@@ -3,34 +3,30 @@ package net.ukr.kurach.d;
 import java.util.Scanner;
 
 /**
- * Написать программу которая считает 4 числа c клавиатуры и выведет на экран
- * самое большое из них.
- * 
+ *
+ *Определить количество дней в году, который вводит пользователь. 
+ *В високосном годе - 366 дней, тогда как в обычном 365. 
+ *Високосный год определяется по следующему правилу:  
+ *Год високосный, если он делится на четыре без остатка, 
+ *но если он делится на 100 без остатка, 
+ *это не високосный год. 
+ *Однако, если он делится без остатка на 400, это високосный год. 
+ *
  */
 public class Main {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Input first number");
-		int a = sc.nextInt();
-		System.out.println("Input second number");
-		int b = sc.nextInt();
-		System.out.println("Input third number");
-		int c = sc.nextInt();
-		System.out.println("Input forth number");
-		int d = sc.nextInt();
-
-		if (a > b && a > c && a > d) {
-			System.out.println("First number: (" + a + ") is the biggest one");
-		} else if (b > a && b > c && b > d) {
-			System.out.println("Second number: (" + b + ") is the biggest one");
-		} else if (c > a && c > b && c > d) {
-			System.out.println("Third number: (" + c + ") is the biggest one");
-		} else if (d > a && d > b && d > c) {
-			System.out.println("Forth number (" + d + ") is the biggest one");
+		System.out.println("input year");
+		int year = sc.nextInt();
+		double a = (4.5 % 4);
+		System.out.println(a);
+		if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
+			System.out.println("366");
+		}else {
+			System.out.println("365");
 		}
-		sc.close();
 	}
 
 }
